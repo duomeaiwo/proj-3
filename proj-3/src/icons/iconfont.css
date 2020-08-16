@@ -1,0 +1,25 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1597553321738'); /* IE9 */
+  src: url('iconfont.eot?t=1597553321738#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAPQAAsAAAAAB/AAAAOBAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqDUIMzATYCJAMMCwgABCAFhG0HPRsAB8geh7F7JIooE4P3W87Ew3/7se77M6g3kmiJJDyKaIiuvXGouiFt4v/yql+dtNJj1EojulFJQy+TWcvHIfcEH4WA/+PeaVN8Psu+y1jtqWNN6gKMAwpob+qiLVwgAXnD2AUt8TQBVPIzExrMyCsDGZo5KYDY1XFKkGWM6IbMIINIKlZm6AlKyIprUSuAx+D78Q9CQgYK4sScObGeroGkT++3UdTS/0vNemZ4m84Otg4kYADIIOYrnZOoKDiAwqhKujmxFA0RTeX5/5+A0NSSjf7xRCBKmenVAD1QUVwU6UgJ8BmFQ5XrX0cpUAk8AB+Q3xyfSGt7kNy8oLrNwdDXV97bW9bfXzEwUIm0yw64nxnIRN1prJx1KB5O9YXv2ueiYC2wdljFjgjtrD+79NyGM8vOl6/fuXTXhj3LdlfsceX7ofZU4bSa3tdlfW/KB95V9r/Vrp8cUVZ5vx+Nqd/NjFK51HOnclzBzbD+mXocfPrv0yP6zx/6kaX789vVPaQpkcj+RO8Bx/+KYyek+b7Z9ulRx2EYt2ZpACXTIbDlEy+HpDndrnLPu3lqRnJ01hGYTdc+f7xKWyhG0QyYGzqaEgNgpt0WPBGizguGDivGXMdXqJ7+9/LiVdelZor9X/4bojGmB+khjId8LMEgCt8QKrg4VeZNdk0+OCt7FipcqK1FJWh+mX3KUaYQaZUoy4Nsjcr7dlUOhcFVoxSU6u1bCHn0U6JU+ggsAvwZqSeiz0F4aQbq6Jf+BjrOtkU22sd9lSkywHvDyDlo/DN2c1N+w64AP5Ds2JQ1DazKCuEQRiSpJH09GMS4ym/LhkavhqtbOqcTZFwTKEj5QiIzkZ35M6GEQhiUkkmESjNkrq/ijEdBuQLoswoA4uAKiNh5AhQHbWyaPwZibr6AhENQwKgI5x0VJoeOSeWJUiAarJqHdWqLmbUtAhNmlhCuxajk03QgqCB8s86DgwOC8pFMYib8FHOaZ3MhgsBilreYcAY4jxiNFmzlLXqiFgK0gmCNCQxkq24UoLaYgJGKRygJCA1MZR5MR83CjPXaC5jC50sQnBZGSnxDQxVZgeA103WPBQsQ1IGdqTR3ariVa5rNxgkhELAwFs/CBMsAdsJoBS0wa/UwPUJNEEA7wG8VIxC1YrsqA5ZXm95vB1QyC1MUkSKjL32RzRyim6sza4iZM7YAAAAAAA==') format('woff2'),
+  url('iconfont.woff?t=1597553321738') format('woff'),
+  url('iconfont.ttf?t=1597553321738') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1597553321738#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon:before {
+  content: "\e61b";
+}
+
+.icon-weixindenglu:before {
+  content: "\e638";
+}
+
