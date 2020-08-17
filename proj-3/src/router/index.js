@@ -12,6 +12,11 @@ export default new Router({
 			hidden: true
 		},
 		{
+			path: '/signup',
+			component: () => import('@/components/signup'),
+			hidden: true
+		},
+		{
 			path: '/',
 			component: Layout,
 			redirect: '/homepage',

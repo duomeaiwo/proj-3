@@ -49,6 +49,11 @@ export default {
                 display: inline-block;
             }
         }
+        .content:hover {
+            // font-weight: bold;
+            transform: translateY(-20px);
+            transition: all  1s ease;
+        }
         .content:last-child {
             margin: 0
         }

@@ -1,16 +1,90 @@
 <template>
 	<div class="trend">
-		<div class="clearfix">
-			<div class="left" id="column"></div>
-			<div class="right" id="pie"></div>
-		</div>
-		<div class="bottom" id="lineTrend"></div>
+		<el-tabs v-model="activeName" >
+			<el-tab-pane label="各类走势" name="1">
+				<div class="clearfix">
+					<div class="left" id="column"></div>
+					<div class="right" id="pie"></div>
+				</div>
+				<div class="bottom" id="lineTrend"></div
+			></el-tab-pane>
+			<el-tab-pane label="地图分布" name="2" style="text-align: center;margin-top: 50px">
+				<img style="width: 60%" src="../assets/map.png" alt="" />
+			</el-tab-pane>
+			<el-tab-pane label="项目列表" name="3">
+				<el-table :data="list_data" highlight-current-row border>
+					<el-table-column
+						align="center"
+						label="项目名称"
+						prop="name"
+					></el-table-column>
+					<el-table-column
+						align="center"
+						label="项目描述"
+						prop="desc"
+					></el-table-column>
+					<el-table-column
+						align="center"
+						label="基础信息"
+						prop="info"
+					></el-table-column>
+					<el-table-column
+						align="center"
+						label="上传人"
+						prop="reporter"
+					></el-table-column>
+					<el-table-column
+						align="center"
+						label="上传时间"
+						prop=""
+					></el-table-column>
+					<el-table-column
+						align="center"
+						label="文件名"
+						prop=""
+					></el-table-column>
+					<el-table-column align="center" label="操作">
+						<template slot-scope="scope">
+							<el-button type="text">编辑</el-button>
+						</template>
+					</el-table-column>
+				</el-table></el-tab-pane
+			>
+		</el-tabs>
 	</div>
 </template>
 
 <script>
 export default {
 	name: 'trend',
+	data() {
+		return {
+			activeName: '1',
+			list_data: [
+				{
+					name: '教育信息化对比展示',
+					desc: '细化指标，信息采集录入',
+					info: '项目简介',
+					reporter: 'anomnymous',
+					tip: ''
+				},
+				{
+					name: '数据可视化处理',
+					desc: '',
+					info: '',
+					reporter: 'anomnymous',
+					tip: ''
+				},
+				{
+					name: '具体信息展示 	',
+					desc: '',
+					info: '',
+					reporter: 'anomnymous',
+					tip: ''
+				}
+			]
+		}
+	},
 	methods: {
 		draw_column() {
 			var myChart = this.$echarts.init(document.getElementById('column'))
