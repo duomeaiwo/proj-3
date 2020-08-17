@@ -1,6 +1,6 @@
 <template>
 	<div class="trend">
-		<el-tabs v-model="activeName" >
+		<el-tabs v-model="activeName">
 			<el-tab-pane label="各类走势" name="1">
 				<div class="clearfix">
 					<div class="left" id="column"></div>
@@ -8,7 +8,11 @@
 				</div>
 				<div class="bottom" id="lineTrend"></div
 			></el-tab-pane>
-			<el-tab-pane label="地图分布" name="2" style="text-align: center;margin-top: 50px">
+			<el-tab-pane
+				label="地图分布"
+				name="2"
+				style="text-align: center;margin-top: 50px"
+			>
 				<img style="width: 60%" src="../assets/map.png" alt="" />
 			</el-tab-pane>
 			<el-tab-pane label="项目列表" name="3">
@@ -35,19 +39,10 @@
 					></el-table-column>
 					<el-table-column
 						align="center"
-						label="上传时间"
-						prop=""
+						label="地区"
+						prop="location"
 					></el-table-column>
-					<el-table-column
-						align="center"
-						label="文件名"
-						prop=""
-					></el-table-column>
-					<el-table-column align="center" label="操作">
-						<template slot-scope="scope">
-							<el-button type="text">编辑</el-button>
-						</template>
-					</el-table-column>
+					
 				</el-table></el-tab-pane
 			>
 		</el-tabs>
@@ -66,21 +61,21 @@ export default {
 					desc: '细化指标，信息采集录入',
 					info: '项目简介',
 					reporter: 'anomnymous',
-					tip: ''
+					location: '上海'
 				},
 				{
 					name: '数据可视化处理',
-					desc: '',
-					info: '',
+					desc: 'xx',
+					info: 'xx',
 					reporter: 'anomnymous',
-					tip: ''
+					location: '江苏'
 				},
 				{
 					name: '具体信息展示 	',
 					desc: '',
 					info: '',
-					reporter: 'anomnymous',
-					tip: ''
+					reporter: 'xx',
+					location: ''
 				}
 			]
 		}
