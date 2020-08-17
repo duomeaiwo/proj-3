@@ -40,17 +40,6 @@ export default new Router({
 			]
 		},
 		{
-			path: '/upload',
-			component: Layout,
-			children: [
-				{
-					path: '',
-					component: () => import('@/components/upload'),
-					name: 'upload'
-				}
-			]
-		},
-		{
 			path: '/trend',
 			component: Layout,
 			children: [
@@ -58,28 +47,6 @@ export default new Router({
 					path: '',
 					component: () => import('@/components/trend'),
 					name: 'trend'
-				}
-			]
-		},
-		{
-			path: '/distribution',
-			component: Layout,
-			children: [
-				{
-					path: '',
-					component: () => import('@/components/distribution'),
-					name: 'distribution'
-				}
-			]
-		},
-		{
-			path: '/projList',
-			component: Layout,
-			children: [
-				{
-					path: '',
-					component: () => import('@/components/projList'),
-					name: 'projList'
 				}
 			]
 		}
